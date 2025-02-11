@@ -1,18 +1,26 @@
-import js from '@eslint/js';
-import globals from 'globals';
-import reactHooks from 'eslint-plugin-react-hooks';
-import reactRefresh from 'eslint-plugin-react-refresh';
-import tseslint from 'typescript-eslint';
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
   { ignores: ['dist'] },
   {
+    settings: {
+      'import/resolver': {
+        typescript: {},
+      },
+    },
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+      project: './tsconfig.json',
+      tsconfigRootDir: './',
+    },
     extends: [
       js.configs.recommended,
       ...tseslint.configs.recommended,
       'plugin:react/jsx-runtime',
-      'plugin:@typescript-eslint/recommended-type-checked',
-      'plugin:@typescript-eslint/stylistic-type-checked',
       'prettier',
     ],
     files: ['**/*.{ts,tsx}'],
@@ -31,5 +39,5 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
     },
-  }
-);
+  },
+)
