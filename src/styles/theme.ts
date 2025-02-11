@@ -7,6 +7,9 @@ export const theme = {
       light: '#f0f0f0',
       medium: '#717171',
     },
+    button: {
+      default: '#8edb00',
+    },
   },
   spacing: {
     xs: '8px',

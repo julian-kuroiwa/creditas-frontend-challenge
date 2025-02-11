@@ -8,6 +8,7 @@ import { GlobalStyle } from './styles/global'
 import { theme } from './styles/theme'
 
 import * as S from './styles'
+import Button from './components/Button'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           nam.
         </S.Title>
         <Input label={'De quanto vc precisa?'} type="text" id="howMuchMoney" />
+        <Button onClick={() => console.log('click')}>Click me</Button>
       </StrictMode>
     </ThemeProvider>
   )
