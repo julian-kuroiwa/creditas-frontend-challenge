@@ -2,6 +2,12 @@ import styled from 'styled-components'
 import { theme } from '~/styles/theme'
 import { LabelProps } from './types'
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`
+
 export const Container = styled.div`
   height: 64px;
   position: relative;
@@ -11,6 +17,7 @@ export const Container = styled.div`
   transition: background-color 0.2s;
   display: flex;
   align-items: center;
+  width: 100%;
 `
 export const Label = styled.label<LabelProps>`
   color: ${({ hasError }) =>
@@ -31,6 +38,7 @@ export const Input = styled.input`
   font-size: 16px;
   line-height: 24px;
   color: ${theme.colors.dark};
+  margin-top: calc(${theme.spacing.xs} / 2);
   resize: none;
   height: 24px;
   width: 100%;
@@ -43,7 +51,8 @@ export const Input = styled.input`
     background-color: ${theme.colors.light};
   }
 
-  &:focus + ${Label} {
+  &:-webkit-autofill,
+  &:not(:placeholder-shown) + ${Label}, &:focus + ${Label} {
     top: 13px;
     font-size: ${theme.font.text.size.xs};
   }
@@ -52,6 +61,6 @@ export const Input = styled.input`
 export const Error = styled.span`
   font-size: ${theme.font.text.size.xs};
   color: ${theme.colors.error};
-  margin-top: ${theme.spacing.s};
+  margin-top: ${theme.spacing.xs};
   display: block;
 `
