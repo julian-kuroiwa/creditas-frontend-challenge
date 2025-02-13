@@ -20,6 +20,18 @@ export const Button = styled.button<ButtonStyleProps>`
       rgba(0, 0, 0, 0.12) 0px 16px 8px -12px;
   }
 
+  &[disabled] {
+    background-color: ${theme.colors.gray.medium};
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
   ${({ size }) => {
     switch (size) {
       case 'small':

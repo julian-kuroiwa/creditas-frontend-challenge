@@ -25,4 +25,16 @@ describe('Button', () => {
 
     expect(onClick).toHaveBeenCalled()
   })
+
+  it('should have a loading if isLoading is passed', () => {
+    const { getByTestId } = render(
+      <Button onClick={onClick} isLoading>
+        {buttonLabel}
+      </Button>,
+    )
+
+    const loader = getByTestId('loader-button')
+
+    expect(loader).toBeInTheDocument()
+  })
 })

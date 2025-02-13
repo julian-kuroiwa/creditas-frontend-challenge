@@ -8,4 +8,5 @@ export interface ButtonProps
   extends ButtonStyleProps,
     ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode
+  isLoading?: boolean
 }
