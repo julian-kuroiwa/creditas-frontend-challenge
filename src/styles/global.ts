@@ -24,10 +24,6 @@ export const GlobalStyle = createGlobalStyle`
       max-width: 100%;
     }
 
-    svg {
-      width: 100%;
-    }
-
     input {
       outline: 0;
     }

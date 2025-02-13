@@ -6,6 +6,7 @@ export const theme = {
     gray: {
       light: '#f0f0f0',
       medium: '#717171',
+      dark: '#313130d9',
     },
     button: {
       default: '#8edb00',
@@ -37,5 +38,13 @@ export const theme = {
         xl: '20px',
       },
     },
+  },
+  header: {
+    size: {
+      default: '60px',
+    },
+  },
+  screenSize: {
+    mobile: '768px',
   },
 }

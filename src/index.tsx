@@ -2,25 +2,17 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { ThemeProvider } from 'styled-components'
 
-import Input from './components/Input'
-
 import { GlobalStyle } from './styles/global'
 import { theme } from './styles/theme'
 
-import * as S from './styles'
-import Button from './components/Button'
+import Home from './pages/Home'
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <StrictMode>
         <GlobalStyle />
-        <S.Title>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos,
-          nam.
-        </S.Title>
-        <Input label={'De quanto vc precisa?'} type="text" id="howMuchMoney" />
-        <Button onClick={() => console.log('click')}>Click me</Button>
+        <Home />
       </StrictMode>
     </ThemeProvider>
   )
