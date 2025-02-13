@@ -1,11 +1,5 @@
+import { fireEvent, render } from '@testing-library/react'
 import { act } from 'react'
-import {
-  fireEvent,
-  queryByTestId,
-  render,
-  waitForElementToBeRemoved,
-} from '@testing-library/react'
-import { vi } from 'vitest'
 
 import Home from './'
 

@@ -3,7 +3,7 @@
 exports[`Home > should match snapshot 1`] = `
 <DocumentFragment>
   <header
-    class="sc-jUkaYT klGyOF"
+    class="sc-dVBluf cQLaZS"
   >
     <svg
       fill="none"
@@ -63,33 +63,33 @@ exports[`Home > should match snapshot 1`] = `
     </svg>
   </header>
   <div
-    class="sc-jbAkgO edoqqo"
+    class="sc-hRDKVd jHxQSZ"
   >
     <h2
-      class="sc-gNZgCX bRGvRY"
+      class="sc-jBIHhB TfSyY"
     >
       Simular Empréstimo
     </h2>
     <form
-      class="sc-kfeOyU hGgoWq"
+      class="sc-cMqPwU lcWMns"
       novalidate=""
     >
       <div
-        class="sc-FEMpB hHfTmq"
+        class="sc-fLDLck hefkZk"
       >
         <div
-          class="sc-gjcoXW wmwZ"
+          class="sc-dycHyt dzVPdY"
         >
           <input
             autocomplete="off"
-            class="sc-fLDLck djtGcT"
+            class="sc-gNZgCX iqkRxP"
             id="loan-value-input"
             name="amount"
             placeholder=" "
             type="string"
           />
           <label
-            class="sc-dVBluf epDlHY"
+            class="sc-jbAkgO iyQohN"
             for="loan-value-input"
           >
             Valor do empréstimo
@@ -97,23 +97,23 @@ exports[`Home > should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="sc-hRDKVd jcAfwv"
+        class="sc-jUkaYT a-DaBg"
       >
         <div
-          class="sc-FEMpB hHfTmq"
+          class="sc-fLDLck hefkZk"
         >
           <div
-            class="sc-gjcoXW wmwZ"
+            class="sc-dycHyt dzVPdY"
           >
             <input
-              class="sc-fLDLck djtGcT"
+              class="sc-gNZgCX iqkRxP"
               id="payment-period-input"
               name="paymentPeriod"
               placeholder=" "
               type="number"
             />
             <label
-              class="sc-dVBluf epDlHY"
+              class="sc-jbAkgO iyQohN"
               for="payment-period-input"
             >
               Prazo do pagamento (em meses)
@@ -121,20 +121,20 @@ exports[`Home > should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="sc-FEMpB hHfTmq"
+          class="sc-fLDLck hefkZk"
         >
           <div
-            class="sc-gjcoXW wmwZ"
+            class="sc-dycHyt dzVPdY"
           >
             <input
-              class="sc-fLDLck djtGcT"
+              class="sc-gNZgCX iqkRxP"
               id="birthDate-input"
               name="birthDate"
               placeholder=" "
               type="date"
             />
             <label
-              class="sc-dVBluf epDlHY"
+              class="sc-jbAkgO iyQohN"
               for="birthDate-input"
             >
               Data de nascimento
@@ -143,7 +143,7 @@ exports[`Home > should match snapshot 1`] = `
         </div>
       </div>
       <button
-        class="sc-jBIHhB fKa-DxT"
+        class="sc-gjcoXW iLRWDG"
         type="submit"
       >
         Simular

@@ -1,13 +1,16 @@
-import Input from '~/components/Input'
-import * as S from './styles'
-import Button from '~/components/Button'
-import Header from '~/components/Header'
-import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useEffect, useState } from 'react'
-import { schema, defaultValues } from './validation'
+import { useForm } from 'react-hook-form'
+
+import Button from '~/components/Button'
+import Header from '~/components/Header'
+import Input from '~/components/Input'
+
 import { calculateLoan, formatCurrency, serializeCurrency } from '~/utils'
 import { FormValues, ResultsProps } from './types'
+import { defaultValues, schema } from './validation'
+
+import * as S from './styles'
 
 const Home = () => {
   const [results, setResults] = useState<ResultsProps | null>(null)
@@ -43,7 +46,7 @@ const Home = () => {
     if (amountValue) {
       setValue('amount', formatCurrency(serializeCurrency(amountValue)))
     }
-  }, [amountValue])
+  }, [amountValue, setValue])
 
   const onSubmit = (data: FormValues) => {
     setIsLoading(true)

@@ -1,6 +1,7 @@
-import { ButtonProps } from './types'
-import * as S from './styles'
 import { Loader } from '../Loader'
+import { ButtonProps } from './types'
+
+import * as S from './styles'
 
 const Button = ({
   size = 'medium',
